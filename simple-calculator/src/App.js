@@ -46,9 +46,15 @@ class App extends Component {
             }
         }
     };
-
+    /*
+     * TO-DO
+     * Replace eval with another function
+     * Implement isValidParentheses from leetcode
+     */
     calculate = () => {
         try {
+            console.log(this.state.result)
+            console.log(eval(this.state.result))
             this.setState({
                 result: (eval(this.state.result)) + "",
                 isEvaluated: true
